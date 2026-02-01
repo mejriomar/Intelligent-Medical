@@ -1,0 +1,15 @@
+créer un dossier public dans le user/.nodered
+Vérifier que Node-RED voit le dossier public
+
+Node-RED sert les fichiers statiques seulement si le dossier public est reconnu dans le settings.js.
+
+Ouvre le fichier settings.js dans ton dossier Node-RED (C:\Users\<TonNom>\.node-red\settings.js).
+
+Cherche la section httpStatic. Elle devrait être commentée par défaut :
+
+// httpStatic: '/home/user/.node-red/public',
+
+
+Décommente et mets ton dossier public :
+
+httpStatic: 'C:\\Users\\<TonNom>\\.node-red\\public',
